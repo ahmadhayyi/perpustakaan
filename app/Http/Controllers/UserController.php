@@ -41,7 +41,6 @@ class UserController extends Controller
      */
     public function store(StoreUserRequest $request)
     {
-        $request['password'] = Hash::make($request['username']);
         User::create($request->all());
         return redirect('/dashboard/user')->with('success', 'Member berhasil ditambah!');
     }

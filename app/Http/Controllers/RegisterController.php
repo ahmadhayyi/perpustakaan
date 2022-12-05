@@ -14,8 +14,6 @@ class RegisterController extends Controller
     }
 
     public function register(StoreRegisterRequest $request){
-        $request['password'] = Hash::make($request['password']);
-        
         User::create($request->all());
         return redirect('/dashboard/login')->with('success', 'Pendaftaran berhasil!');
     }

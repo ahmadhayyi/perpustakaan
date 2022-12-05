@@ -18,7 +18,7 @@ class UserSeeder extends Seeder
         User::create([
             'kode_member' => '73618',
             'username' => 'admin',
-            'password' => bcrypt('admin'),
+            'password' => 'admin',
             'nama' => 'admin',
             'ribath' => 'AS SYAFII',
             'kamar' => '2',
@@ -30,7 +30,7 @@ class UserSeeder extends Seeder
         User::create([
             'kode_member' => '54724',
             'username' => 'aufa',
-            'password' => bcrypt('aufa'),
+            'password' => 'aufa',
             'nama' => 'M. AUFA ALFIS SYIHAB',
             'ribath' => 'AS SYAFII',
             'kamar' => '2',
